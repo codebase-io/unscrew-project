@@ -1,0 +1,24 @@
+{
+    "name": "unscrew/project",
+    "description": "Unscrew CMS Project",
+    "type": "project",
+    "require": {
+        "unscrew/unscrew": "0.*"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "adrian7",
+            "email": "adrian.silimon@yahoo.com"
+        }
+    ],
+    "scripts": {
+        "post-create-project-cmd": [
+            "php -r \"copy('vendor/unscrew/unscrew/config.dist.php', 'config.php');\"",
+            "php -r \"copy('vendor/unscrew/unscrew/bootstrap.php', 'bootstrap.php');\"",
+            "php -r \"copy('vendor/unscrew/unscrew/public', '.');\"",
+            "php -r \"copy('vendor/unscrew/unscrew/storage', '.');\""
+        ]
+    },
+    "minimum-stability": "stable"
+}
