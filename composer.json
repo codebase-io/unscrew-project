@@ -14,10 +14,12 @@
     ],
     "scripts": {
         "post-create-project-cmd": [
-            "php -r \"copy('vendor/unscrew/unscrew/config.dist.php', 'config.php');\"",
-            "php -r \"copy('vendor/unscrew/unscrew/bootstrap.php', 'bootstrap.php');\"",
-            "php -r \"copy('vendor/unscrew/unscrew/public', '.');\"",
-            "php -r \"copy('vendor/unscrew/unscrew/storage', '.');\""
+            "cp vendor/unscrew/unscrew/config.dist.php config.php",
+            "cp vendor/unscrew/unscrew/bootstrap.php bootstrap.php",
+            "cp -R vendor/unscrew/unscrew/public .",
+            "cp -R vendor/unscrew/unscrew/storage .",
+            "echo -e \"\\033[0;32mYour Unscrew project has been set up!\\033[0m\"",
+            "echo \"Follow the setup guide here: TODO\""
         ]
     },
     "minimum-stability": "stable"
