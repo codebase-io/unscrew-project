@@ -16,10 +16,9 @@
         "post-create-project-cmd": [
             "cp vendor/unscrew/unscrew/config.dist.php config.php",
             "cp vendor/unscrew/unscrew/bootstrap.php bootstrap.php",
+            "cp vendor/unscrew/unscrew/compose.yml compose.yml",
             "cp -R vendor/unscrew/unscrew/public .",
-            "cp -R vendor/unscrew/unscrew/storage .",
-            "echo -e \"\\033[0;32mYour Unscrew project has been set up!\\033[0m\"",
-            "echo \"Follow the setup guide here: TODO\""
+            "cp -R vendor/unscrew/unscrew/storage ."
         ]
     },
     "minimum-stability": "stable"
