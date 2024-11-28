@@ -3,7 +3,7 @@
     "description": "Unscrew CMS Project",
     "type": "project",
     "require": {
-        "unscrew/unscrew": "^0.2"
+        "unscrew/unscrew": "^0.3"
     },
     "license": "MIT",
     "authors": [
